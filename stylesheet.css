@@ -1,0 +1,43 @@
+.tittle {
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 30%;
+}
+
+.picture img {
+    width: 80%;
+    margin-left: 100px;
+}
+
+.row {
+    flex-wrap: wrap-reverse !important ;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .tittle {
+        padding-top: 5px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .picture img {
+        width: 80%;
+        margin: 0;
+    }
+
+    .text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .button-bottom a{
+        width: 100%;
+    }
+
+   
+
+    .picture img {
+        width: 100%;
+    }
+}
