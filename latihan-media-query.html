@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        
+        .mobile,
+        .tablet,
+        .desktop {
+            display: none;
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width : 480px) {
+            body{
+                background-color: red ;
+            }
+            
+            .non-mobile, .desktop {
+                
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+        }
+
+
+        @media only screen and (min-width: 481px) and (max-width : 768px) {
+            body{
+                background-color: blue ;
+            }
+            .mobile, .desktop {
+                
+                display: none;
+            }
+
+            .non-mobile {
+                display: block;
+            }
+        }
+
+
+        @media only screen and (min-width: 769px) and (max-width : 1024px) {
+            body{
+                background-color: green ;
+            }
+            .non-mobile, .mobile {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="desktop">Ini Device Desktop</p>
+    <p class="non-mobile">Ini Device Tablet</p>
+    <p class="mobile">Ini Device Mobile</p>
+
+</body>
+
+</html>
